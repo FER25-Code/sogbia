@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:scrollingCache="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/spacing_xxlarge">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_large">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nameprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgProf"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/photo_male_2"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0"
+                app:civ_border="false" />
+             </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+            <TextView
+                android:id="@+id/idnote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/quantum_black_100" />
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/iconsstar" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+            <TextView
+                android:id="@+id/idemail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/quantum_black_100" />
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_email" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:background="@color/grey_10" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <TextView
+                android:id="@+id/tel_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/quantum_black_100"/>
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_phone" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:background="@color/grey_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <TextView
+                android:id="@+id/typevc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/quantum_black_100" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/car" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <TextView
+                android:id="@+id/SendEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Send Email to Admin "
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/quantum_black_100" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:onClick="SendEmail"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_email" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:background="@color/grey_10" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:background="@color/grey_10" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="L'histoire"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/quantum_black_100" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:onClick="Histoire"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/history_white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:background="@color/grey_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="Modifier profile "
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/quantum_black_100" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:onClick="edit_profile"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/edit" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:background="@color/grey_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="DECONNEXION"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/quantum_black_100" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:onClick="signout"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/dec" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:background="@color/grey_10" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_large" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

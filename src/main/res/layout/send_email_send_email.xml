@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SendEmail.SendEmailActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer un email à admin"
+        android:textSize="30dp"
+        android:textColor="@color/quantum_black_100"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <View
+        android:layout_width="@dimen/spacing_mxlarge"
+        android:layout_height="@dimen/spacing_mxlarge" />
+    <TextView
+        android:id="@+id/showemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:textSize="20dp"
+        android:textColor="@color/quantum_black_hint_text"
+      />
+    <View
+        android:layout_width="@dimen/spacing_mxlarge"
+        android:layout_height="@dimen/spacing_mxlarge" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <EditText
+            android:id="@+id/idemailSend"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="text"
+            android:inputType="text"
+              />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <View
+        android:layout_width="@dimen/spacing_mxlarge"
+        android:layout_height="@dimen/spacing_mxlarge" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/idemailpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <View
+        android:layout_width="@dimen/spacing_mxlarge"
+        android:layout_height="@dimen/spacing_mxlarge" />
+    <Button
+        android:onClick="Send"
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/bginput"
+        android:text="SEND"
+        android:textColor="@android:color/black" />
+</LinearLayout>

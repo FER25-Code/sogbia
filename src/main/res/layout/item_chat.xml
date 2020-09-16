@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@color/grey_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:foregroundGravity="top"
+        android:layout_gravity="top"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/idimgchat"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="imgclick"
+                android:src="@drawable/photo_male_2"
+                app:civ_border="false"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0" />
+
+            <View
+                android:layout_width="@dimen/spacing_smlarge"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/nameporfilchat"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_smlarge"
+                android:text="F.Ramy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/grey_90"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

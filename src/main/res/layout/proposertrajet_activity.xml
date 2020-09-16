@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_middle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_home" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_originP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:singleLine="true"
+                    android:text="Origin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_location" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_destinationP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:singleLine="true"
+                    android:text="Destination"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+          />
+   <LinearLayout
+       android:layout_gravity="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:id="@+id/bt_pickTimeS"
+           android:layout_width="140dp"
+           android:layout_height="50dp"
+           android:layout_centerInParent="true"
+           android:background="@drawable/bginput"
+           android:paddingLeft="@dimen/spacing_xlarge"
+           android:paddingRight="@dimen/spacing_xlarge"
+           android:text="temps D"
+           android:textColor="@color/grey_80"
+           android:minHeight="@dimen/spacing_xmlarge"
+           />
+       <View
+           android:layout_width="40dp"
+           android:layout_height="50dp"
+         />
+
+       <Button
+           android:id="@+id/bt_pickTimeE"
+           android:layout_width="140dp"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:background="@drawable/bginput"
+           android:paddingLeft="@dimen/spacing_xlarge"
+           android:paddingRight="@dimen/spacing_xlarge"
+           android:text="temps F"
+           android:textColor="@color/grey_80"
+          />
+
+   </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+     />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_pickdataS"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bginput"
+                android:paddingLeft="@dimen/spacing_xlarge"
+                android:paddingRight="@dimen/spacing_xlarge"
+                android:text="Date D"
+                android:textColor="@color/grey_80" />
+            <View
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                />
+
+            <Button
+                android:id="@+id/bt_pickdataE"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bginput"
+                android:paddingLeft="@dimen/spacing_xlarge"
+                android:paddingRight="@dimen/spacing_xlarge"
+                android:text="Date F"
+                android:textColor="@color/grey_80"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/prixe"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:hint="Prix :  $"
+            android:minHeight="@dimen/spacing_xmlarge"
+            android:textColor="@color/grey_80"
+            />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+
+                />
+            <EditText
+                android:id="@+id/numplace"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:hint="Numéro de place"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:textColor="@color/grey_80"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            />
+        <EditText
+            android:id="@+id/marque"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="marque de voiture "
+            android:minHeight="@dimen/spacing_xmlarge"
+            android:textColor="@color/grey_80"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_Publier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_mlarge"
+        android:background="@drawable/bginput"
+        android:gravity="center"
+        android:paddingLeft="@dimen/spacing_xlarge"
+        android:paddingRight="@dimen/spacing_xlarge"
+        android:text="Publier"
+        android:onClick="Publier"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+
+
+
